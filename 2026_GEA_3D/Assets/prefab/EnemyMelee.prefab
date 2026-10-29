@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 5247841562586200162}
   - component: {fileID: 5051044638771958307}
   - component: {fileID: 3907005973748187062}
+  - component: {fileID: 6750754173111447256}
+  - component: {fileID: 4629136996594743176}
   m_Layer: 0
   m_Name: EnemyMelee
-  m_TagString: 'Enemy '
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.9750824, y: 7.094449, z: 4.8027854}
+  m_Center: {x: 0.28800726, y: 3.0472245, z: -2.167238}
 --- !u!114 &3907005973748187062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +72,44 @@ MonoBehaviour:
   maxHp: 3
   currentHp: 0
   hpSlider: {fileID: 0}
+  invincibleTime: 0
+  dropPrefab: {fileID: 0}
+  dropChance: 0.3
+  hitEffect: {fileID: 7830775408125096141, guid: 37087516a2aff2e4cad6957654708d7d, type: 3}
+--- !u!114 &6750754173111447256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766883603014321186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b366ccefe8b2045834ff33e133b703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
+  moveSpeed: 2
+  detectRange: 15
+  attackRange: 1.5
+  damage: 1
+  attackCooldown: 1
+--- !u!114 &4629136996594743176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766883603014321186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b366ccefe8b2045834ff33e133b703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
+  moveSpeed: 2
+  detectRange: 15
+  attackRange: 1.5
+  damage: 1
+  attackCooldown: 1
 --- !u!1001 &5435988952066532181
 PrefabInstance:
   m_ObjectHideFlags: 0
