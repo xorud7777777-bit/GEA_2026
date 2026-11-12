@@ -395,6 +395,8 @@ GameObject:
   - component: {fileID: 1168345335}
   - component: {fileID: 1168345334}
   - component: {fileID: 1168345333}
+  - component: {fileID: 1168345338}
+  - component: {fileID: 1168345339}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -440,7 +442,7 @@ MonoBehaviour:
   playerName: "\uC784\uC138\uC885"
   level: 99
   attack: 999
-  isBoss: 0
+  isBoss: 1
   itemName: "\uD3EC\uC158"
   price: 50
   discount: 1
@@ -475,6 +477,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168345338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168345332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea7eccf4e5c3014bb008dc8688ab90d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lesson10
+--- !u!114 &1168345339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168345332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d41001bacafa4468b20f030a001490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
+  expPerKill: 35000
+  killCount: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
